@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals_app/screens/Filters_screen.dart';
 
 class MainDrawer extends StatelessWidget {
   Widget _buildMenuItem(
@@ -46,7 +47,7 @@ class MainDrawer extends StatelessWidget {
             Navigator.of(context).pushNamed('/');
           }),
           _buildMenuItem('Filters', Icons.settings, () {
-            Navigator.of(context).pushNamed('/settings');
+            Navigator.of(context).pushReplacementNamed(FilterScreen.routeName);
           }),
         ],
       ),

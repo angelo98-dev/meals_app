@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:meals_app/screens/Filters_screen.dart';
 import 'package:meals_app/screens/meal_detail_screen.dart';
 import 'package:meals_app/screens/tabs_screen.dart';
 
@@ -62,6 +63,7 @@ class MyApp extends StatelessWidget {
         '/': (ctx) => const TabScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailsScreen.nameRoute: (ctx) => const MealDetailsScreen(),
+        FilterScreen.routeName: (ctx) => const FilterScreen()
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(
