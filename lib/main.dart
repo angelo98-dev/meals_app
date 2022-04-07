@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:meals_app/screens/meal_detail_screen.dart';
+import 'package:meals_app/screens/tabs_screen.dart';
 
 import 'screens/category_meals_screen.dart';
 import 'screens/categories_screen.dart';
@@ -58,13 +59,13 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (ctx) => CategoriesScreen(),
+        '/': (ctx) => const TabScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
-        MealDetailsScreen.nameRoute: (ctx) => MealDetailsScreen(),
+        MealDetailsScreen.nameRoute: (ctx) => const MealDetailsScreen(),
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(
-          builder: (ctx) => CategoriesScreen(),
+          builder: (ctx) => const TabScreen(),
         );
       },
     );
