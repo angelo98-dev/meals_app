@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals_app/widgets/main_drawer.dart';
 
 import './categories_screen.dart';
 import './favorites_screen.dart';
@@ -19,7 +20,7 @@ class _TabScreenState extends State<TabScreen> {
       length: 2,
       child: Scaffold(
         drawer: const Drawer(
-          child: SafeArea(child: Text('Hello')),
+          child: SafeArea(child: MainDrawer()),
         ),
         appBar: AppBar(
           title: const Text('Meals'),
