@@ -18,6 +18,9 @@ class _TabScreenState extends State<TabScreen> {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
+        drawer: const Drawer(
+          child: SafeArea(child: Text('Hello')),
+        ),
         appBar: AppBar(
           title: const Text('Meals'),
           bottom: const TabBar(
